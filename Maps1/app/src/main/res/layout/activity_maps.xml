@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <fragment
+        android:id="@+id/mapView"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageButton
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/maptype"
+        android:layout_marginLeft="100dp"
+        android:layout_above="@+id/tv1"
+        />
+
+    <ImageButton
+        android:id="@+id/shr"
+        android:layout_width="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/share"
+        android:layout_above="@+id/tv1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/holo_green_light"
+        android:textColor="@android:color/background_dark"
+        android:id="@+id/tv1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/sv" />
+
+    <ImageButton
+        android:id="@+id/sv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/save"
+        android:layout_alignTop="@+id/type"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dir"
+        android:layout_marginLeft="210dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/directions"
+        android:layout_above="@+id/tv1"
+        />
+
+
+</RelativeLayout>
